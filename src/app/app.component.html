@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Demo created by {{title}}!!
+  </h1>
+</div>
+
+<section id="main">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="FirstName" [value]="firstName" #fName>
+    <input type="text" class="form-control" placeholder="LastName" [value]="lastName" #lName>
+    <button class="btn btn-primary btn-block" (click)="assignTitle(fName.value, lName.value)">Clicl me</button>
+  </div>
+</section>
